@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent {
+        background-color: yellow;
+        width: 200px;
+        text-align: center;
+        padding: 20px;
+        margin: 100px auto;
+        border-radius: 20px;
+      }
+
+      ::placeholder {
+        color: red;
+        border-bottom: 2px dotted blue;
+      }
+
+      input {
+        background: transparent;
+        color: blue;
+        border: none;
+        margin-bottom: 10px;
+      }
+
+      body {
+        background-color: black;
+    
+      }
+
+      button {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="parent">
+        <div class="child">
+          <input type="text" placeholder="Enter the username" />
+        </div>
+        <div class="child">
+          <input type="password" placeholder="Enter the password" />
+        </div>
+        <div class="child">
+          <input type="password" placeholder="Re-Enter the password" />
+        </div>
+        <div class="child">
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

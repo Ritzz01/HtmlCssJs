@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // console.log(3)
+        function maximum(...n){
+            let char = ""
+            let max = 0;
+            for(let i = 0 ; i < n.length ; i++){
+                let count = 1;
+                for(let j = i + 1; j < n.length ; j++){
+                    if(n[i] == n[j]){
+                        count++;
+                        n[j] = ""
+                    }
+                }
+                if( count > max){
+                    max = count;
+                    char = n[i] 
+                }
+            }
+            console.log(char,max)
+        }
+        function main(){
+            let s = "banana";
+            maximum(...s)
+
+        }
+        main()
+    </script>
+    
+<!-- <script src="./two.js"></script> -->
+</body>
+</html>

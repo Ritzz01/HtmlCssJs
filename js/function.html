@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //function declaration
+
+      //   function main() {
+      //     console.log("Hello");
+      //   }
+      //   main();
+
+      //   //function expression
+
+      //   const a = function () {
+      //     console.log(10 + 20);
+      //   };
+      //   a();
+
+      //   //arrow function
+
+      //   const multi = (a) => console.log(a * 5);
+      //   multi(10);
+
+      //   //hof
+
+      //   const calc = (cb, a, b) => {
+      //     return cb(a, b);
+      //   };
+
+      //   let result = calc((a, b) => a + b, 20, 30);
+      //   console.log(result);
+
+      //   let result1 = calc(
+      //     function (x, y) {
+      //       return x * y;
+      //     },
+      //     40,
+      //     50
+      //   );
+      //   console.log(result1);
+
+      //   //2nd example\
+
+      //   function greet(message) {
+      //     message();
+      //   }
+
+      //   function msg1() {
+      //     console.log("Happy Weekened");
+      //   }
+
+      //   function msg2() {
+      //     console.log("Happy birthday");
+      //   }
+      //   greet(msg1);
+      //   greet(msg2);
+
+      //   //iife - function calling itself
+
+      //   (function (a, b) {
+      //     console.log(a + b);
+      //   })(10, 20);
+
+      //   (() => {
+      //     console.log("This is IIFE");
+      //   })();
+
+      //   //PURE FUNCTION
+
+      //   function x(a, b) {
+      //     console.log(a + b);
+      //   }
+      //   x(10, 20);
+      //   x(10, 20);
+      //   x(10, 20);
+
+      //   //impure function
+      //   let count = 0;
+      //   function y(a, b) {
+      //     a = a + count;
+      //     count++;
+      //     console.log(a + b);
+      //   }
+      //   y(10, 20);//30
+      //   y(10, 20);//31
+      //   y(10, 20);//32
+
+      //scope
+
+      //global scope
+
+      //   let a=1;
+      //   var b=2;
+      //   const c=3;
+      //   console.log(a,b,c);
+
+      //   {
+      //     console.log(a,b,c);
+
+      //   }
+
+      //   function main()
+      //   {
+      //     console.log(a,b,c);
+      //   }
+      //   main()
+
+      //function/ local scope
+
+    //   function main() {
+    //     let a = 1;
+    //     var b = 2;
+    //     const c = 3;
+
+    //     console.log(a, b, c);
+    //   }
+    //   //  console.log(a);//ReferenceError
+    //   // console.log(b);//ReferenceError
+    //   //  console.log(c);//ReferenceError
+    //   main();
+
+    //block scope
+    {
+        let a=1;
+        var b=20;
+        const c=30;
+        console.log(a,b,c);
+        
+    }
+    console.log(a);//ReferenceError
+    console.log(b);//20
+    console.log(c);//ReferenceError
+    
+    </script>
+  </body>
+</html>

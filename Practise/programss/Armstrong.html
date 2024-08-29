@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      let n=+(prompt("enter a no"));
+     let temp=n;
+     let sum=0;
+
+    //  let str=""+a;
+    //  str=str.length
+    // // console.log(str);
+
+    //  while(a>0)
+    //  {
+    //     let digit=a%10;
+    // //    sum+=Math.pow(digit,str)
+
+    // sum+=digit**str;
+
+    //     a=Math.trunc(a/10);
+    //  }
+
+let count=0;
+
+while(n>0)
+{
+count++;
+n=Math.trunc(n/10);
+}
+
+n=temp;
+
+while(n>0)
+{
+    let fact=1;
+
+    let digit=n%10;
+
+    for(let i=0;i<count;i++)
+{
+    fact*=digit;
+}
+
+sum+=fact;
+n=Math.trunc(n/10);
+}
+
+     if(sum==temp)
+     {
+        console.log("Armstrong")
+     }
+     else{
+        console.log("not armstrong")
+     }
+
+
+     
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
